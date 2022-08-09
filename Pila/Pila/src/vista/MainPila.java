@@ -28,9 +28,6 @@ public class MainPila {
         Productos elementoEliminado = losProductos.desapilar();
         System.out.println("\nElemento eliminado: "+ elementoEliminado +"\n");
                 
-//        OperacionesPila p = new OperacionesPila();
-//        Pila<Productos> newPila = p.pilaDuplicada(losProductos);                
-//        System.out.println("Pila: " + losProductos.toString() + "Pila Duplicada: " + newPila.toString());
         Pila<Productos> pilaDuplicada = pilaDuplicada(losProductos);
         System.out.println("Pila: " + losProductos.toString() + "\n\nPila Duplicada: " + pilaDuplicada.toString());
 
