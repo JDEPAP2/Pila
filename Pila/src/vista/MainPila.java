@@ -7,7 +7,7 @@ package vista;
 
 import datos.Productos;
 import modelo.Pila;
-import static modelo.OperacionesPila.pilaDuplicada;
+import static modelo.OperacionesPila.*;
 /**
  *
  * @author jose.escobar
@@ -30,6 +30,9 @@ public class MainPila {
                 
         Pila<Productos> pilaDuplicada = pilaDuplicada(losProductos);
         System.out.println("Pila: " + losProductos.toString() + "\n\nPila Duplicada: " + pilaDuplicada.toString());
+        
+        Pila<Productos> pilaInvertida = pilaInvertida(losProductos);
+        System.out.println("\nPila Invertida: " + pilaInvertida.toString());
 
     }
     

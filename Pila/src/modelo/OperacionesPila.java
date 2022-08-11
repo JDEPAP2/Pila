@@ -32,4 +32,14 @@ public class OperacionesPila {
         return pilaDuplicada;
     }
     
+    public static <T extends Base> Pila<T> pilaInvertida(Pila<T> pilaOriginal){
+        Pila<T> pilaInvertida = new Pila<>();
+        Pila<T> pilaAuxiliar = pilaDuplicada(pilaOriginal);
+        
+        while (!pilaAuxiliar.estaVacia()){
+            pilaInvertida.apilar(pilaAuxiliar.desapilar());
+        }
+        return pilaInvertida;
+    }
+    
 }
